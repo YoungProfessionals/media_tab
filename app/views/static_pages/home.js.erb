@@ -1,0 +1,9 @@
+<% if @value == "welcome" %>
+	$(".main-content").html("<%= escape_javascript(render('shared/welcome')) %>")
+<% elsif @value == "team" %>
+	$(".main-content").html("<%= escape_javascript(render('shared/team')) %>")
+<% elsif @value == "partner" %>
+	$(".main-content").html("<%= escape_javascript(render('shared/partner')) %>")
+<% else %>
+	$(".main-content").html("<%= escape_javascript(render('shared/contact')) %>")
+<% end %>
