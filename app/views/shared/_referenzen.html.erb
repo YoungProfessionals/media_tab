@@ -1,0 +1,44 @@
+<div id="slides">
+  
+    <div class="slider_item">
+      <%= image_tag("referenz_kanzlei-lexa.png", :alt => "") %>               
+    </div>
+    <div class="slider_item">
+      <%= image_tag("referenz_lauda-koenigshofen.png", :alt => "") %>               
+    </div>
+    <div class="slider_item"> 
+      <%= image_tag("referenz_nash-club.png", :alt => "") %>          
+    </div>
+
+</div>
+
+<div class="slides-content">
+  
+</div>
+
+<script>
+  $(function(){
+    $("#slides").slidesjs({  
+      pagination: false,
+      navigation: {
+        active: true,
+        effect: "slide"
+      },
+      preload: true,
+      play: 5000,
+      pause: 2500,
+      hoverPause: true,
+      
+      callback: {
+        
+        complete: function(number) {
+          $.ajax({
+            type: "GET",
+            data: ( {slide: "slide" + number} ),
+            dataType: 'script'
+          });
+        }
+      }
+    });  
+  });
+</script>

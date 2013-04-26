@@ -1,19 +1,33 @@
-<div class="page-wrapper">
-  <!-- header -->
-    <header class="text-center">
-      <h1 class="text-center">YP ICI - Incubation, Consulting, Investor Relations</h1>
-      <%= image_tag("fotolia_32560301_xs.jpg", :size => "424x283", :alt => "", :class => "polaroid") %>
-      <nav class="main-nav">
-        <ul id="unstyled">
-          <li id="welcome_tab">Willkomen</li>
-          <li id="team_tab">Team</li>
-          <li id="partner_tab">Partner</li>
-          <li id="contact_tab">Kontakt</li>
-        </ul>
-      </nav>
-    </header>
-  <!-- page-contact -->
-    <section class="main-content">
-      <%= render 'shared/welcome' %>
-    </section>
+<div id="wrapper">
+  <div id="ipad-frame-top">
+    <%= image_tag("ipad-frame-top.png", :alt => "") %>
+  </div>
+      
+      <div id="ipad-frame-body">
+      
+        <div class="page-wrapper">
+        
+          <!-- header -->
+          <header class="text-center">
+            <h1 class="text-center">Kontakt - YP Media Solutions</h1>
+            <%= image_tag("banner.jpg", :size => "424x254", :alt => "") %>
+            <nav class="main-nav">
+              <ul class="unstyled">
+                <li><a id="tab001">Team</a></li>
+                <li><a id="tab002">Leistungen</a></li>
+                <li><a id="tab003">Referenzen</a></li>
+                <li><a id="tab004">Kontakt</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <section id="page-services" class="main-content">
+            <%= render 'shared/team' %>
+          </section>
+        </div>
+      </div>
+
+  <div id="ipad-frame-bottom">
+    <%= image_tag("ipad-frame-bottom.png", :alt => "") %>
+  </div>
 </div>

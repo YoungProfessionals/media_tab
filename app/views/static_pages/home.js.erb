@@ -1,9 +1,17 @@
-<% if @value == "welcome" %>
-	$(".main-content").html("<%= escape_javascript(render('shared/welcome')) %>")
-<% elsif @value == "team" %>
+<% if @value == "team" %>
 	$(".main-content").html("<%= escape_javascript(render('shared/team')) %>")
-<% elsif @value == "partner" %>
-	$(".main-content").html("<%= escape_javascript(render('shared/partner')) %>")
+<% elsif @value == "leistungen" %>
+	$(".main-content").html("<%= escape_javascript(render('shared/leistungen')) %>")
+<% elsif @value == "referenzen" %>
+	$(".main-content").html("<%= escape_javascript(render('shared/referenzen')) %>")
+<% elsif @value == "kontakt" %>
+	$(".main-content").html("<%= escape_javascript(render('shared/kontakt')) %>")
+<% end %>
+
+<% if @slide == "slide1" %>
+	$(".slides-content").html("<%= escape_javascript(render('shared/slide1')) %>")
+<% elsif @slide == "slide2" %>
+	$(".slides-content").html("<%= escape_javascript(render('shared/slide2')) %>")
 <% else %>
-	$(".main-content").html("<%= escape_javascript(render('shared/contact')) %>")
+	$(".slides-content").html("<%= escape_javascript(render('shared/slide3')) %>")
 <% end %>

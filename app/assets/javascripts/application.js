@@ -17,17 +17,15 @@
 //= require_tree .
 
 $(document).ready(function() {
-	// Click-Event for Welcome Tab
-	$('#welcome_tab').click(function() {
+	$(window).load(function () {	
 		$.ajax({
-	         type: "GET",
-	         data: ( {value: "welcome"} ),
-	         dataType: 'script'
+		    type: "GET",
+		    data: ( {value: "team"} ),
+		    dataType: 'script'
 		});
 	});
-
 	// Click-Event for Team Tab
-	$('#team_tab').click(function() {
+	$('#tab001').click(function() {
 		$.ajax({
 	         type: "GET",
 	         data: ( {value: "team"} ),
@@ -35,21 +33,31 @@ $(document).ready(function() {
 		});
 	});
 
-	// Click-Event for Partner Tab
-	$('#partner_tab').click(function() {
+	// Click-Event for Leistungen Tab
+	$('#tab002').click(function() {
 		$.ajax({
 	         type: "GET",
-	         data: ( {value: "partner"} ),
+	         data: ( {value: "leistungen"} ),
 	         dataType: 'script'
 		});
 	});
 
-	// Click-Event for Contact Tab
-	$('#contact_tab').click(function() {
+	// Click-Event for Referenzen Tab
+	$('#tab003').click(function() {
 		$.ajax({
 	         type: "GET",
-	         data: ( {value: "contact"} ),
+	         data: ( {value: "referenzen"} ),
 	         dataType: 'script'
 		});
 	});
+
+	// Click-Event for Kontakt Tab
+	$('#tab004').click(function() {
+		$.ajax({
+	         type: "GET",
+	         data: ( {value: "kontakt"} ),
+	         dataType: 'script'
+		});
+	});
+ 
 });
