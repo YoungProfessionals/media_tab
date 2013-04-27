@@ -13,11 +13,11 @@
                  
                     <%= f.label :Telefonnummer %>
                     <%= f.text_field :phone %>
-               
+                    <div id="massage_field">
                     <%= f.label :Nachricht %>
                     <%= f.text_area :message %>
-                    
-                    <%= f.submit "Nachricht senden", class: "btn btn-large btn-primary"%>
+                    </div>
+                    <%= f.submit "Nachricht senden", id: "submit_message"%>
                 <% end %>
            </div>
          </div>
