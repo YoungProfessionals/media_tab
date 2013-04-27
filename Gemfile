@@ -9,6 +9,7 @@ gem 'thor', '>=0.14.4'
 gem 'nifty-generators'
 gem 'jquery-ui-rails'
 gem 'mail'
+gem 'sass-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -23,7 +24,6 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
