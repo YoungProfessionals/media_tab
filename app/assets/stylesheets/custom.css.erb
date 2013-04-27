@@ -1,3 +1,19 @@
+@import "bootstrap";
+textarea {
+  resize: vertical;
+}
+input {
+  height: auto !important;
+}
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+
 * {margin: 0; padding: 0;}
 html {-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-family: Helvetica,'Helvetica Neue',Arial,sans-serif;;font-size: 13px;line-height: 160%;}
 body {margin: 0; color: #000; font-weight: normal;}
